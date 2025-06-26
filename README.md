@@ -2,6 +2,21 @@
 
 Este es un micro proyecto educativo que demuestra el uso de hilos (threads) y mutexes en C para prevenir condiciones de carrera (race conditions).
 
+## 📋 Tabla de Contenidos
+
+1. [Descripción del Proyecto](#-descripción-del-proyecto)
+2. [Compilación y Ejecución](#-compilación-y-ejecución)
+3. [Conceptos Demostrados](#-conceptos-demostrados)
+4. [Examen Teórico](#-examen-teórico---hilos-y-mutexes-en-c)
+   - [Parte 1: Conceptos Básicos](#parte-1-conceptos-básicos-20-puntos)
+   - [Parte 2: Análisis del Código](#parte-2-análisis-del-código-30-puntos)
+   - [Parte 3: Predicciones](#parte-3-predicciones-25-puntos)
+   - [Parte 4: Modificaciones](#parte-4-modificaciones-25-puntos)
+5. [Resultado Final del Examen](#-resultado-final-del-examen)
+6. [Recursos Adicionales](#-recursos-adicionales)
+7. [Keywords](#-keywords)
+
+
 ## 📋 Descripción del Proyecto
 
 El programa crea 4 hilos que incrementan un contador compartido 100,000 veces cada uno. Utiliza un mutex para sincronizar el acceso al contador y evitar race conditions.
@@ -219,5 +234,16 @@ pthread_mutex_unlock(&mutex);
 - `pthread_mutex_unlock()`: Desbloquear mutex
 
 ---
+
+## 🔑 Keywords
+
+**Conceptos principales:**
+`threads` • `pthread` • `mutex` • `race condition` • `critical section` • `synchronization` • `concurrent programming` • `shared memory` • `deadlock prevention` • `thread safety`
+
+**Funciones clave:**
+`pthread_create()` • `pthread_join()` • `pthread_mutex_lock()` • `pthread_mutex_unlock()` • `PTHREAD_MUTEX_INITIALIZER`
+
+**Términos técnicos:**
+`mutual exclusion` • `atomic operations` • `thread scheduler` • `context switching` • `parallel processing` • `resource sharing`
 
 *Proyecto realizado como práctica educativa de programación concurrente en C*
